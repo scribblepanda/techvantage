@@ -229,7 +229,7 @@ select:visited {
 .it-nw-btn button {
   color: #fff;
   height: 55px;
-  width: 165px;
+  max-width: 165px;
   font-weight: 600;
   border-radius: 5px;
   font-family: "Poppins";
@@ -784,10 +784,12 @@ select:visited {
 
 .it-nw-feature-innerbox {
   padding: 70px 15px 30px;
+  transition: transform 0.3s ease-in-out;
   background-color: #fff;
   -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 27, 175, 0.1);
   box-shadow: 0px 10px 35px 0px rgba(0, 27, 175, 0.1);
 }
+
 .it-nw-feature-innerbox .it-nw-feature-inner-icon {
   left: 0;
   right: 0;

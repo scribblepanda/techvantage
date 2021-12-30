@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/video.min.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
     <link rel="stylesheet" href="assets/css/it-source-2.css" />
   </head>
   <!-- <head></head> -->
@@ -68,20 +69,25 @@
           <div class="it-nw-main-menu-wrap d-flex">
             <nav class="it-nw-main-navigation ul-li">
               <ul id="main-nav" class="navbar-nav text-capitalize clearfix">
-                <li><a class="nav-link" href="#it-nw-banner">About</a></li>
+                <li><a class="nav-link" href="#it-nw-about">About</a></li>
                 <li><a class="nav-link" href="#it-nw-feature">Service</a></li>
-                <li><a class="nav-link" href="#it-nw-about">Products</a></li>
-                <li><a class="nav-link" href="#it-nw-service">Webinar</a></li>
-                <li><a class="nav-link" href="#it-nw-team">Framework</a></li>
-                <li><a class="nav-link" href="#it-nw-blog">Blog</a></li>
+                <li><a class="nav-link" href="#it-nw-service">Partners</a></li>
+                <li>
+                  <a class="nav-link" href="#it-nw-project">Success Stories</a>
+                </li>
+                <li><a class="nav-link" href="#it-nw-blog">News</a></li>
               </ul>
             </nav>
             <div class="it-nw-btn text-center">
               <a
                 class="d-flex justify-content-center align-items-center"
+                data-toggle="modal"
+                data-target="#demoModal"
+                data-whatever="@mdo"
                 href="#"
-                >Request Demo <i class="fas fa-arrow-right"></i
-              ></a>
+              >
+                Request Demo <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -122,13 +128,13 @@
                       class="navbar-nav text-capitalize clearfix"
                     >
                       <li>
-                        <a class="nav-link" href="#it-nw-banner">About</a>
+                        <a class="nav-link" href="#it-nw-about">About</a>
                       </li>
                       <li>
                         <a class="nav-link" href="#it-nw-feature">Service</a>
                       </li>
                       <li>
-                        <a class="nav-link" href="#it-nw-about">Products</a>
+                        <a class="nav-link" href="#it-nw-about">Partners</a>
                       </li>
                       <li>
                         <a class="nav-link" href="#it-nw-service">Webinar</a>
@@ -176,26 +182,7 @@
                 and technology to drive bold digital transformation.
               </p>
               <div class="it-nw-banner-btn d-flex">
-                <div class="it-nw-btn text-center">
-                  <a
-                    class="d-flex justify-content-center align-items-center"
-                    href="#"
-                    >Learn More <i class="fas fa-arrow-right"></i
-                  ></a>
-                </div>
-                <div class="it-nw-banner-video d-flex align-items-center">
-                  <a
-                    class="
-                      video_box
-                      d-flex
-                      justify-content-center
-                      align-items-center
-                    "
-                    href="https://www.youtube.com/watch?v=6zsr22OeF2I"
-                    ><i class="fas fa-play"></i
-                  ></a>
-                  <span>How It Work</span>
-                </div>
+                <div class="h1 text-white typed">Innovation</div>
               </div>
             </div>
             <div
@@ -210,216 +197,6 @@
       </div>
     </section>
     <!-- End of Slider section
-	============================================= -->
-
-    <!-- Start of Feature section
-	============================================= -->
-    <section id="it-nw-feature" class="it-nw-feature-section position-relative">
-      <div class="it-nw-ft-bg text-center position-absolute">
-        <img src="images/ft-bg.png" alt="" />
-      </div>
-      <div class="it-nw-side-bg text-center position-absolute">
-        <img src="assets/img/its-2/side-line.png" alt="" />
-      </div>
-      <div class="container">
-        <div
-          class="
-            it-nw-section-title
-            headline
-            pera-content
-            text-center
-            middle-align
-            wow
-            fadeInUp
-          "
-          data-wow-delay="100ms"
-          data-wow-duration="1500ms"
-        >
-          <span class="it-nw-title-tag">Features </span>
-          <h2>Our Featured Services</h2>
-          <p>
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.
-          </p>
-        </div>
-        <div class="it-nw-feature-content">
-          <div class="row justify-content-center">
-            <div
-              class="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="0ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-feature-innerbox text-center position-relative">
-                <div
-                  class="
-                    it-nw-feature-inner-icon
-                    position-absolute
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-idea"></i>
-                </div>
-                <div class="it-nw-feature-inner-text headline pera-content">
-                  <h3>Data Psychology</h3>
-                  <p>
-                    Sometimes Businesses have a lot of raw data, but may not
-                    really know what to do with it. Knowing how to put your data
-                    to work for you in the right way is essential to truly get
-                    to know more about your existing and potential customers.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="200ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-feature-innerbox text-center position-relative">
-                <div
-                  class="
-                    it-nw-feature-inner-icon
-                    position-absolute
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-data-analysis"></i>
-                </div>
-                <div class="it-nw-feature-inner-text headline pera-content">
-                  <h3>Data Science</h3>
-                  <p>
-                    Our Data scientists understand business models and are great
-                    with data wrangling. But more importantly, they are trained
-                    to communicate well and present analytical models and their
-                    accompanying statistics in a business-friendly manner.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="400ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-feature-innerbox text-center position-relative">
-                <div
-                  class="
-                    it-nw-feature-inner-icon
-                    position-absolute
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-profit"></i>
-                </div>
-                <div class="it-nw-feature-inner-text headline pera-content">
-                  <h3>Data Engineering</h3>
-                  <p>
-                    To make analytics possible for businesses, we need a big
-                    data infrastructure and it is our Data engineers who work in
-                    the background and help create that infrastructure.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="it-nw-feature-content">
-          <div class="row justify-content-center">
-            <div
-              class="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="0ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-feature-innerbox text-center position-relative">
-                <div
-                  class="
-                    it-nw-feature-inner-icon
-                    position-absolute
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-idea"></i>
-                </div>
-                <div class="it-nw-feature-inner-text headline pera-content">
-                  <h3>Data Visualization</h3>
-                  <p>
-                    Our Data visualization engineers combine their ability of
-                    working with large volumes of data with Design elements so
-                    that the business personnel are able to leverage the full
-                    benefits of the Analytical model underneath. We build our
-                    solutions in Tableau, Spotfire, D3.JS and exce
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="200ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-feature-innerbox text-center position-relative">
-                <div
-                  class="
-                    it-nw-feature-inner-icon
-                    position-absolute
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-data-analysis"></i>
-                </div>
-                <div class="it-nw-feature-inner-text headline pera-content">
-                  <h3>Business Intelligence & Analytics</h3>
-                  <p>
-                    Our Data scientists understand business models and are great
-                    with data wrangling. But more importantly, they are trained
-                    to communicate well and present analytical models and their
-                    accompanying statistics in a business-friendly manner.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-4 col-md-6 wow fadeInUp"
-              data-wow-delay="400ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-feature-innerbox text-center position-relative">
-                <div
-                  class="
-                    it-nw-feature-inner-icon
-                    position-absolute
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-profit"></i>
-                </div>
-                <div class="it-nw-feature-inner-text headline pera-content">
-                  <h3>Software Development</h3>
-                  <p>
-                    To make analytics possible for businesses, we need a big
-                    data infrastructure and it is our Data engineers who work in
-                    the background and help create that infrastructure.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Feature section
 	============================================= -->
 
     <!-- Start of About section
@@ -443,9 +220,6 @@
                 <div class="it-nw-about-img">
                   <img src="images/qq.jpg" />
                 </div>
-                <div class="it-nw-about-img-2">
-                  <img src="assets/img/its-2/logo/badge.png" />
-                </div>
               </div>
               <div class="it-nw-about-img-area d-flex">
                 <div class="it-nw-about-img">
@@ -464,10 +238,18 @@
                 <span class="it-nw-title-tag">About our Company </span>
                 <h2>We Offer Best Creatives IT Solutions & Consulting Firm</h2>
                 <p>
-                  Our vertical solutions expertise allows your business to
-                  streamline workflow, and increase productivity. No matter the
-                  business pure as has you covered with industry compliant
-                  solutions.
+                  TechVantage, a company that was started in 2010 with a focus
+                  on Smartgrid analytics that has core DNA of Analytics and
+                  Artificial Intelligence today, is a Data Science Solution
+                  Company with a Specialization in building software powered by
+                  Analytics, Machine learning & Artificial Intelligence with
+                  150+ active customers. Techvantage is a pioneer of some of the
+                  best-in-class products & services, having a Global presence
+                  across different regions in US, UK, Germany and APAC, with its
+                  HQ in Trivandrum, India. <br />
+                  In 2018, Techvantage won the Deloitte India TechFast 50 and
+                  APAC 500 making us one of the fastest-growing technology
+                  company in India (15th) and the region (244)
                 </p>
               </div>
               <div class="it-nw-about-tab-wrapper">
@@ -476,18 +258,9 @@
                     <li class="nav-item">
                       <a
                         href="#"
-                        data-target="#history"
-                        data-toggle="tab"
-                        class="nav-link text-capitalize active"
-                        >Company History</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#"
                         data-target="#mission"
                         data-toggle="tab"
-                        class="nav-link text-capitalize"
+                        class="nav-link text-capitalize active"
                         >Our Mission</a
                       >
                     </li>
@@ -504,26 +277,7 @@
                 </div>
                 <div class="it-nw-about-tab-content ul-li-block pera-content">
                   <div id="tabsContent" class="tab-content">
-                    <div id="history" class="tab-pane fade active show">
-                      <div class="it-nw-about-tab-content">
-                        <p>
-                          Started in 2010 as a company focused on Smartgrid
-                          analytics has a Global presence across different
-                          regions in US, UK, Germany and APAC, with it’s HQ in
-                          Trivandrum, India. TechVantage today is a Data Science
-                          Solution Company with Specialization in building
-                          software powered by Analytics, Machine learning &
-                          Artificial Intelligence.
-                        </p>
-                        <ul>
-                          <li>11 Years Of Expertise</li>
-                          <li>11 Award Wins</li>
-                          <li>Global Clients</li>
-                          <li>Cutting Edge AI Technology</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div id="mission" class="tab-pane fade">
+                    <div id="mission" class="tab-pane fade active show">
                       <div class="it-nw-about-tab-content">
                         <p>
                           TechVantage aspires to be the partner that helps
@@ -592,6 +346,240 @@
     <!-- End of About section
 	============================================= -->
 
+    <!-- Start of Feature section
+	============================================= -->
+    <section id="it-nw-feature" class="it-nw-feature-section position-relative">
+      <div class="it-nw-ft-bg text-center position-absolute">
+        <img src="images/ft-bg.png" class="rotating" alt="" />
+      </div>
+      <div class="it-nw-side-bg text-center position-absolute">
+        <img src="assets/img/its-2/side-line.png" alt="" />
+      </div>
+      <div class="container">
+        <div
+          class="
+            it-nw-section-title
+            headline
+            pera-content
+            text-center
+            middle-align
+            wow
+            fadeInUp
+          "
+          data-wow-delay="100ms"
+          data-wow-duration="1500ms"
+        >
+          <span class="it-nw-title-tag">Features </span>
+          <h2>Our Featured Services</h2>
+          <p>
+            We are fast-growing analytics, machine learning and AI company
+            committed to helping organizations take learned decisions by
+            deriving insights from the vast amount of structured and
+            unstructured data. We combine the deep skills in data science with
+            the ability to develop high performance software to help
+            organizations gain competitive edge.
+          </p>
+        </div>
+        <div class="it-nw-feature-content">
+          <div class="row justify-content-center">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0ms"
+              data-wow-duration="1500ms"
+              data-toggle="modal"
+              data-target="#modal-dataPsychology"
+            >
+              <div class="it-nw-feature-innerbox text-center position-relative">
+                <div
+                  class="
+                    it-nw-feature-inner-icon
+                    position-absolute
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <i class="flaticon-idea"></i>
+                </div>
+                <div class="it-nw-feature-inner-text headline pera-content">
+                  <h3>Data Science</h3>
+                  <p>
+                    Our Data scientists understand business models and are great
+                    with data wrangling. But more importantly, they are trained
+                    to communicate well and present analytical models and their
+                    accompanying statistics in a business-friendly manner.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1500ms"
+              data-toggle="modal"
+              data-target="#modal-dataPsychology"
+            >
+              <div class="it-nw-feature-innerbox text-center position-relative">
+                <div
+                  class="
+                    it-nw-feature-inner-icon
+                    position-absolute
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <i class="flaticon-data-analysis"></i>
+                </div>
+                <div class="it-nw-feature-inner-text headline pera-content">
+                  <h3>Data Engineering</h3>
+                  <p>
+                    To make analytics possible for businesses, we need a big
+                    data infrastructure, and it is our Data engineers who work
+                    in the background and help create that infrastructure. The
+                    Data engineers help identify the right Data platforms -
+                    relational databases, NoSQL, Hadoop, or Spark - depending on
+                    the business context.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="1500ms"
+              data-toggle="modal"
+              data-target="#modal-dataPsychology"
+            >
+              <div class="it-nw-feature-innerbox text-center position-relative">
+                <div
+                  class="
+                    it-nw-feature-inner-icon
+                    position-absolute
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <i class="flaticon-profit"></i>
+                </div>
+                <div class="it-nw-feature-inner-text headline pera-content">
+                  <h3>Data Visualization</h3>
+                  <p>
+                    Our Data visualization engineers combine their ability of
+                    working with large volumes of data with Design elements so
+                    that the business personnel can leverage the full benefits
+                    of the Analytical model underneath. We build our solutions
+                    in Tableau, Spotfire, D3.JS and excel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="it-nw-feature-content">
+          <div class="row justify-content-center">
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="0ms"
+              data-wow-duration="1500ms"
+            >
+              <div
+                class="it-nw-feature-innerbox text-center position-relative"
+                data-toggle="modal"
+                data-target="#modal-dataPsychology"
+              >
+                <div
+                  class="
+                    it-nw-feature-inner-icon
+                    position-absolute
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <i class="flaticon-idea"></i>
+                </div>
+                <div class="it-nw-feature-inner-text headline pera-content">
+                  <h3>Data Psychology</h3>
+                  <p>
+                    Sometimes Businesses have a lot of raw data but may not
+                    really know what to do with it. Knowing how to put your data
+                    to work for you in the right way is essential to truly get
+                    to know more about your existing and potential customers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="200ms"
+              data-wow-duration="1500ms"
+              data-toggle="modal"
+              data-target="#modal-dataPsychology"
+            >
+              <div class="it-nw-feature-innerbox text-center position-relative">
+                <div
+                  class="
+                    it-nw-feature-inner-icon
+                    position-absolute
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <i class="flaticon-data-analysis"></i>
+                </div>
+                <div class="it-nw-feature-inner-text headline pera-content">
+                  <h3>Business Intelligence & Analytics</h3>
+                  <p>
+                    Our Data scientists understand business models and are great
+                    with data wrangling. But more importantly, they are trained
+                    to communicate well and present analytical models and their
+                    accompanying statistics in a business-friendly manner.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay="400ms"
+              data-wow-duration="1500ms"
+              data-toggle="modal"
+              data-target="#modal-dataPsychology"
+            >
+              <div class="it-nw-feature-innerbox text-center position-relative">
+                <div
+                  class="
+                    it-nw-feature-inner-icon
+                    position-absolute
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  <i class="flaticon-profit"></i>
+                </div>
+                <div class="it-nw-feature-inner-text headline pera-content">
+                  <h3>Software Development</h3>
+                  <p>
+                    Mobile or Web applications - We do a great job when you want
+                    your applications to not just sit there, but act on
+                    information coming to them without your intervention. We
+                    have built some cool augmented intelligence and artificial
+                    intelligence applications and will be happy to share our
+                    experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Feature section
+	============================================= -->
+
     <!-- Start of Service section
 	============================================= -->
     <section id="it-nw-service" class="it-nw-service-section position-relative">
@@ -603,189 +591,20 @@
       </div>
       <div class="container">
         <div class="it-nw-service-upper-wrapper">
-          <div class="row">
-            <div
-              class="col-lg-6 wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-section-title headline pera-content">
-                <span class="it-nw-title-tag">Our Products </span>
-                <h2>AI Based Products</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
+          <div class="row d-flex align-items-center">
+            <div class="col-3 partner-img">
+              <img src="images/dl.png" alt="" />
             </div>
-            <div
-              class="col-lg-6 wow fadeInRight"
-              data-wow-delay="200ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-service-content">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="it-nw-service-innerbox position-relative">
-                      <div
-                        class="
-                          it-nw-service-inner-icon
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <i class="flaticon-digital"></i>
-                      </div>
-                      <div
-                        class="it-nw-service-inner-text headline pera-content"
-                      >
-                        <h3>C-Docz</h3>
-                        <p>AI-powered Intelligent Document Processor Engine</p>
-                        <a href="#"
-                          >Read More <i class="fas fa-arrow-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="it-nw-service-innerbox position-relative">
-                      <div
-                        class="
-                          it-nw-service-inner-icon
-                          d-flex
-                          justify-content-center
-                          align-items-center
-                        "
-                      >
-                        <i class="flaticon-conversation"></i>
-                      </div>
-                      <div
-                        class="it-nw-service-inner-text headline pera-content"
-                      >
-                        <h3>Moo-Id</h3>
-                        <p>
-                          Unique identification of Cattle - Facial / Pattern
-                          Recognition
-                        </p>
-                        <a href="#"
-                          >Read More <i class="fas fa-arrow-right"></i
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-3 partner-img">
+              <img src="images/ms.png" alt="" />
+            </div>
+            <div class="col-3 partner-img">
+              <img src="images/tb.svg" alt="" />
+            </div>
+            <div class="col-3 partner-img">
+              <img src="images/sf.png" alt="" />
             </div>
           </div>
-        </div>
-        <div class="it-nw-service-lower-wrapper">
-          <div class="row">
-            <div
-              class="col-lg-3 col-md-6 wow fadeInUp"
-              data-wow-delay="0ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-service-innerbox position-relative">
-                <div
-                  class="
-                    it-nw-service-inner-icon
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-data-processing"></i>
-                </div>
-                <div class="it-nw-service-inner-text headline pera-content">
-                  <h3>Fly Hy</h3>
-                  <p>AI-powered end-to-end Talent acquisition System</p>
-                  <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 wow fadeInUp"
-              data-wow-delay="200ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-service-innerbox position-relative">
-                <div
-                  class="
-                    it-nw-service-inner-icon
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-setting"></i>
-                </div>
-                <div class="it-nw-service-inner-text headline pera-content">
-                  <h3>Kupukoo</h3>
-                  <p>AI-based Peer-to-Peer Insurance Model</p>
-                  <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 wow fadeInUp"
-              data-wow-delay="400ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-service-innerbox position-relative">
-                <div
-                  class="
-                    it-nw-service-inner-icon
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-software-development"></i>
-                </div>
-                <div class="it-nw-service-inner-text headline pera-content">
-                  <h3>Elina</h3>
-                  <p>
-                    Basic chatbot to assist customers in product information
-                    queries
-                  </p>
-                  <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-lg-3 col-md-6 wow fadeInUp"
-              data-wow-delay="600ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="it-nw-service-innerbox position-relative">
-                <div
-                  class="
-                    it-nw-service-inner-icon
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                  "
-                >
-                  <i class="flaticon-analytics"></i>
-                </div>
-                <div class="it-nw-service-inner-text headline pera-content">
-                  <h3>FullySure</h3>
-                  <p>Pay-as-you-go Motor Insurance platform</p>
-                  <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="it-nw-btn text-center wow flipInX"
-          data-wow-delay="200ms"
-          data-wow-duration="1500ms"
-        >
-          <a class="d-flex justify-content-center align-items-center" href="#"
-            >All Products <i class="fas fa-arrow-right"></i
-          ></a>
         </div>
       </div>
     </section>
@@ -863,100 +682,102 @@
         data-wow-duration="1500ms"
       >
         <span class="it-nw-title-tag">Case Studies </span>
-        <h2>Our LAtest Works</h2>
+        <h2>Success Stories</h2>
         <p>
           Dream company ut perspiciatis unde omnis iste natus error sit
           voluptatem accusantiumes doloremque laudantium, totam rem aperiam
           eaque busino.
         </p>
       </div>
-      <div class="it-nw-project-content">
-        <div class="it-nw-project-slider-area">
-          <div
-            class="it-nw-project-innerbox position-relative wow fadeInLeft"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div class="it-nw-project-inner-img">
-              <img src="images/pr1.jpg" alt="" />
+
+      <div class="it-nw-project-content" style="background: #010717">
+        <div class="content-width">
+          <div class="slideshow">
+            <!-- Slideshow Items -->
+            <div class="slideshow-items">
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="images/w3.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"
+                    ><b>Fraud Detection Model</b></span
+                  >
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <div class="vertical-part">
+                    <b
+                      >A leading German Bank wants to identify their customers
+                      who are likely to fraudulent through their historical
+                      information of Fraudsters.</b
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="images/w2.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"><b>Customer Churn Model</b></span>
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <div class="vertical-part">
+                    <b
+                      >Channel or Program rating is not sufficient for optimal
+                      ad pricing in targeted advertising. The client wanted to
+                      create quarter hour projections of viewership at the
+                      household level per network.</b
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="images/w1.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"
+                    ><b>Generic Pool Management</b></span
+                  >
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <div class="vertical-part">
+                    <b
+                      >As part of the insurance claim process, customers are to
+                      upload a video testimonial to report the reason for the
+                      loss of the device they have insured. The requirement was
+                      to analyze the video and use non-verbal cues to detect any
+                      fraud indicators.</b
+                    >
+                  </div>
+                  <div class="btn btn-outline-light my-4">
+                    Read more <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="it-nw-project-inner-text position-absolute headline">
-              <span>Data Analysis</span>
-              <h3><a href="#">For a German Bank</a></h3>
-            </div>
-            <div class="it-nw-project-link">
-              <a
-                class="d-flex align-items-center justify-content-center"
-                href="#"
-                ><i class="flaticon-link"></i
-              ></a>
-            </div>
-          </div>
-          <div
-            class="it-nw-project-innerbox position-relative wow fadeInUp"
-            data-wow-delay="100ms"
-            data-wow-duration="1500ms"
-          >
-            <div class="it-nw-project-inner-img">
-              <img src="images/pr1.jpg" alt="" />
-            </div>
-            <div class="it-nw-project-inner-text position-absolute headline">
-              <span>Data Science</span>
-              <h3><a href="#">for a German bank</a></h3>
-            </div>
-            <div class="it-nw-project-link">
-              <a
-                class="d-flex align-items-center justify-content-center"
-                href="#"
-                ><i class="flaticon-link"></i
-              ></a>
-            </div>
-          </div>
-          <div
-            class="it-nw-project-innerbox position-relative wow fadeInRight"
-            data-wow-delay="0ms"
-            data-wow-duration="1500ms"
-          >
-            <div class="it-nw-project-inner-img">
-              <img src="images/pr1.jpg" alt="" />
-            </div>
-            <div class="it-nw-project-inner-text position-absolute headline">
-              <span>It Consultency</span>
-              <h3><a href="#">Our Wonderful Gallery</a></h3>
-            </div>
-            <div class="it-nw-project-link">
-              <a
-                class="d-flex align-items-center justify-content-center"
-                href="#"
-                ><i class="flaticon-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="it-nw-project-innerbox position-relative">
-            <div class="it-nw-project-inner-img">
-              <img src="images/pr1.jpg" alt="" />
-            </div>
-            <div class="it-nw-project-inner-text position-absolute headline">
-              <span>It Consultency</span>
-              <h3><a href="#">Our Wonderful Gallery</a></h3>
-            </div>
-            <div class="it-nw-project-link">
-              <a
-                class="d-flex align-items-center justify-content-center"
-                href="#"
-                ><i class="flaticon-link"></i
-              ></a>
+            <div class="controls">
+              <ul>
+                <li class="control" data-index="0"></li>
+                <li class="control" data-index="1"></li>
+                <li class="control" data-index="2"></li>
+              </ul>
             </div>
           </div>
         </div>
         <div
-          class="it-nw-btn text-center text-center wow flipInX"
+          class="it-nw-btn text-center text-center wow flipInX pb-5"
           data-wow-delay="200ms"
           data-wow-duration="1500ms"
         >
-          <a class="d-flex justify-content-center align-items-center" href="#"
-            >Get Started <i class="fas fa-arrow-right"></i
-          ></a>
+          <button class="btn btn-secondary" href="#">All Case Studies</button>
         </div>
       </div>
     </section>
@@ -969,7 +790,7 @@
       id="it-nw-why-choose"
       class="it-nw-why-choose-section position-relative"
     >
-      <div class="it-nw-whc-shape position-absolute">
+      <div id="particles-js" class="it-nw-whc-shape position-absolute">
         <img src="assets/img/its-2/net2.png" alt="" />
       </div>
       <div class="container">
@@ -984,81 +805,27 @@
                 >
                   <span class="it-nw-title-tag">Why choose Us </span>
                   <h2>Here are some reasons why you should choose us.</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
-                    tempor incididunt ut labore et dolore magna
-                    aliqua.consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore
-                  </p>
-                </div>
-                <div class="it-nw-why-choose-feature">
-                  <div
-                    class="
-                      it-nw-why-choose-feature-list
-                      d-flex
-                      align-items-center
-                      wow
-                      fadeInUp
-                    "
-                    data-wow-delay="200ms"
-                    data-wow-duration="1500ms"
-                  >
-                    <div class="it-nw-why-choose-feature-icon">
-                      <i class="flaticon-agile"></i>
-                    </div>
-                    <div
-                      class="
-                        it-nw-why-choose-feature-text
-                        headline
-                        pera-content
-                      "
-                    >
-                      <h3>Flexible Solutions</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do
-                      </p>
-                    </div>
+                  <div class="it-nw-about-tab-content">
+                    <ul>
+                      <li class="mb-3">
+                        Our delivery is much faster as we have built a bunch of
+                        reusable frameworks that shortens our project duration
+                      </li>
+                      <li class="mb-3">
+                        Our project approach is unique and when customers are
+                        not clear about the problem statement, we have pioneered
+                        the concept of an experienced Data psychologist looking
+                        at your data and help the customer understand how the
+                        data could be used to build augmented intelligence or
+                        artiﬁcial intelligence software
+                      </li>
+                      <li class="mb-3">
+                        We have outstanding EDA (exploratory Data analysis)
+                        capability, and we are able to process data well prior
+                        to building accurate models
+                      </li>
+                    </ul>
                   </div>
-                  <div
-                    class="
-                      it-nw-why-choose-feature-list
-                      d-flex
-                      align-items-center
-                      wow
-                      fadeInUp
-                    "
-                    data-wow-delay="300ms"
-                    data-wow-duration="1500ms"
-                  >
-                    <div class="it-nw-why-choose-feature-icon">
-                      <i class="flaticon-design-thinking"></i>
-                    </div>
-                    <div
-                      class="
-                        it-nw-why-choose-feature-text
-                        headline
-                        pera-content
-                      "
-                    >
-                      <h3>Industry Leading AI Service</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="it-nw-btn text-center wow flipInX"
-                  data-wow-delay="200ms"
-                  data-wow-duration="1500ms"
-                >
-                  <a
-                    class="d-flex justify-content-center align-items-center"
-                    href="#"
-                    >Get Started <i class="fas fa-arrow-right"></i
-                  ></a>
                 </div>
               </div>
             </div>
@@ -1198,8 +965,8 @@
           data-wow-delay="0ms"
           data-wow-duration="1500ms"
         >
-          <span class="it-nw-title-tag">Team </span>
-          <h2>Who Love To Work Together</h2>
+          <span class="it-nw-title-tag">Our Leadership </span>
+          <h2>Organisational Chart</h2>
           <p>
             dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et cenas accumsan lacus vel facilisis.
@@ -1554,7 +1321,7 @@
 	============================================= -->
     <section id="it-nw-faq" class="it-nw-faq-section position-relative">
       <div class="it-nw-faq-sh position-absolute">
-        <img src="assets/img/its-2/fq-bg.png" alt="" />
+        <img src="assets/img/its-2/fq-bg.png" class="rotating" alt="" />
       </div>
       <div class="container">
         <div
@@ -1780,7 +1547,7 @@
 	============================================= -->
     <section id="it-nw-blog" class="it-nw-blog-section position-relative">
       <div class="it-nw-blog-sh position-absolute">
-        <img src="assets/img/its-2/blg-bg.png" alt="" />
+        <img src="assets/img/its-2/blg-bg.png" class="rotating" alt="" />
       </div>
       <div class="container">
         <div
@@ -1917,6 +1684,107 @@
     <!-- End of Blog section
 	============================================= -->
 
+    <div
+      class="modal fade"
+      id="modal-dataPsychology"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          </div>
+          <div class="modal-body">
+            <h1 class="text-center text-uppercase mb-3">Data Psychology</h1>
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-1">
+                <img src="images/pex.jpg" alt="" />
+                <br />
+              </div>
+              <div class="col-sm-8 col-sm-offset-1">
+                <p>
+                  Sometimes Businesses have a lot of raw data but may not really
+                  know what to do with it. Knowing how to put your data to work
+                  for you in the right way is essential to truly get to know
+                  more about your existing and potential customers.
+                </p>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="demoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Request Demo</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"
+                  >Company:</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"
+                  >Designation:</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Start of Footer section
 	============================================= -->
     <footer
@@ -1946,9 +1814,7 @@
               <form action="#">
                 <input type="text" placeholder="Email Here" />
                 <div class="it-nw-btn text-center">
-                  <button>
-                    Subscribe Now<i class="fas fa-arrow-right"></i>
-                  </button>
+                  <button>Subscribe Now</button>
                 </div>
               </form>
             </div>
@@ -2072,6 +1938,9 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"></script>
     <script src="assets/js/it-source-2.js"></script>
   </body>
 </html>
