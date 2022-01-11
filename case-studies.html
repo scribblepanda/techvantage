@@ -61,7 +61,10 @@
       <input type="checkbox" class="toggler" />
       <div class="hamburger"><div></div></div>
     </div>
-    <div class="sample-header">
+    <div
+      class="sample-header"
+      style="background-image: url('../../images/bg-1.jpg')"
+    >
       <div class="sample-header-section text-center">
         <h1 class="display-3">Success Stories</h1>
         <div class="crumbs">
@@ -81,6 +84,34 @@
     <div class="sample-section-wrap mb-5">
       <div class="sample-section">
         <div class="container">
+          <div
+            class="row d-flex align-items-center justify-content-center pb-4"
+          >
+            <div class="select_mate" data-mate-select="active">
+              <select name="" onchange="" onclick="return false;" id="">
+                <option value="">Select Industry</option>
+                <option value="1">Banking</option>
+                <option value="2">Finance</option>
+                <option value="3">Telecom and Media</option>
+                <option value="3">Education</option>
+              </select>
+              <p class="selecionado_opcion" onclick="open_select(this)"></p>
+              <span onclick="open_select(this)" class="icon_select_mate"
+                ><svg
+                  fill="#000000"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                  <path d="M0-.75h24v24H0z" fill="none" /></svg
+              ></span>
+              <div class="cont_list_select_mate">
+                <ul class="cont_select_int"></ul>
+              </div>
+            </div>
+          </div>
           <div class="row flip-boxes">
             <div class="col-md-3 col-sm-4 col-8 flip-box">
               <div
