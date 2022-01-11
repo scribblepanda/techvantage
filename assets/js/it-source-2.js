@@ -235,6 +235,15 @@ Last change:    00/00/00
   });
 })();
 
+$("input:checkbox").change(function () {
+  console.log("changed");
+  if ($(this).is(":checked")) {
+    $("#menuu").addClass("menu-active");
+  } else {
+    $("#menuu").removeClass("menu-active");
+  }
+});
+
 // Master DOManipulator v2 ------------------------------------------------------------
 const items = document.querySelectorAll(".item"),
   controls = document.querySelectorAll(".control"),

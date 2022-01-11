@@ -20,6 +20,7 @@ CSS Table of content:-
 /*=========
 Font load
 ===========*/
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@400;500;600;700&display=swap");
 /*=========
 Color Code
@@ -710,7 +711,7 @@ select:visited {
 }
 
 .it-nw-banner-item {
-  padding: 370px 0px 250px;
+  padding: 100px 0px 120px;
 }
 
 .it-nw-banner-text {
@@ -788,6 +789,7 @@ select:visited {
   background-color: #fff;
   -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 27, 175, 0.1);
   box-shadow: 0px 10px 35px 0px rgba(0, 27, 175, 0.1);
+  cursor: pointer;
 }
 
 .it-nw-feature-innerbox .it-nw-feature-inner-icon {
@@ -957,7 +959,8 @@ select:visited {
 /*----------------------------------------------------*/
 .it-nw-service-section {
   background-color: #f5f6f9;
-  padding: 120px 0px 100px;
+  padding: 80px 0px 200px;
+  margin-top: 80px;
 }
 .it-nw-service-section .it-nw-section-title {
   padding-top: 20px;
@@ -2403,3 +2406,62 @@ select:visited {
   }
 }
 /*---------------------------------------------------- */
+.sidebar {
+  top: 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  overflow-x: hidden !important;
+  overflow-y: hidden;
+  color: white;
+  min-width: 10%;
+}
+
+.sidebar-blue {
+  /* From https://css.glass */
+  background: rgba(5, 17, 46, 0.36);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  /* border-right: white solid 0.3px; */
+}
+
+.sidebar .active {
+  color: #7938fd !important;
+  background-color: transparent !important;
+  font-size: 20px;
+  font-weight: 800;
+}
+.sidebar .nav-item {
+  width: 100%;
+}
+.margin-left {
+  margin-left: 10% !important;
+}
+.navbutton a {
+  border-radius: 0 !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    padding-right: 10px;
+    min-width: 100px;
+  }
+  .sidebar .active {
+    color: #ffffff !important;
+    background-color: #7938fd !important;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .margin-left {
+    margin-left: 100px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .margin-left {
+    margin-left: 0px !important;
+  }
+}
