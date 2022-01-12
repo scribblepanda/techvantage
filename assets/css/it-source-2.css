@@ -2441,6 +2441,17 @@ select:visited {
 .margin-left {
   margin-left: 10% !important;
 }
+.margin-12 {
+  margin-left: 12% !important;
+}
+@media screen and (max-width: 400px) {
+  .margin-left {
+    margin-left: 0 !important;
+  }
+  .margin-12 {
+    margin-left: 0 !important;
+  }
+}
 .navbutton a {
   border-radius: 0 !important;
 }

@@ -27,7 +27,7 @@ html {
 
 .content-width {
   width: 86%;
-  height: 100vh;
+  height: 75vh;
   margin: 0 auto;
 }
 
@@ -319,13 +319,13 @@ canvas {
   background: rgba(5, 17, 46, 0.36);
 
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12.1px);
-  -webkit-backdrop-filter: blur(12.1px);
+  backdrop-filter: blur(14.1px);
+  -webkit-backdrop-filter: blur(14.1px);
 }
 .menu-wrap .menu > div > div {
   text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
+  max-width: 100vw;
+  max-height: 120vh;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
