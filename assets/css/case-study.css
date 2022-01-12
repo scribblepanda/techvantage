@@ -492,3 +492,115 @@ h2 {
   margin: 0px;
   cursor: pointer;
 }
+
+.webinar .media {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.webinar figure {
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+}
+.webinar figure a {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.webinar figure:hover .media {
+  transform: scale(1.25);
+}
+figcaption {
+  color: #252830;
+  height: calc(100% - 30px);
+  margin: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+}
+.webinar .body {
+  background-color: white;
+  bottom: 0;
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+}
+.webinar svg {
+  height: inherit;
+  width: 100%;
+}
+.webinar svg text {
+  text-anchor: middle;
+}
+.webinar svg #alpha {
+  fill: white;
+}
+.webinar svg .title {
+  font-size: 28px;
+  font-family: "Montserrat";
+  letter-spacing: 5px;
+}
+.webinar svg #base {
+  fill: white;
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+
+.tab-pane .gallery {
+  width: 600px;
+  margin: auto;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.tab-pane .img-c {
+  width: 200px;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.tab-pane .img-w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+.tab-pane .img-w img {
+  display: none;
+}
+.tab-pane .img-c {
+  transition: width ease 400ms, height ease 350ms,
+    left cubic-bezier(0.4, 0, 0.2, 1) 420ms,
+    top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+.tab-pane .img-c:hover .img-w {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+.tab-pane .img-c.active {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 2;
+}
+.tab-pane .img-c.postactive {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+.tab-pane .img-c.active.positioned {
+  left: 0 !important;
+  top: 0 !important;
+  transition-delay: 50ms;
+}

@@ -31,10 +31,8 @@
         <div>
           <div>
             <ul>
-                <li>
-                <a class="mega-menu-link" href="index.html"
-                  >Home
-                </a>
+              <li>
+                <a class="mega-menu-link" href="index.html">Home </a>
               </li>
               <li>
                 <a class="mega-menu-link" href="leadership.html"
@@ -65,7 +63,7 @@
     </div>
     <div
       class="sample-header"
-      style="background-image: url('../../images/rr.jpg')"
+      style="background-image: url('https://picsum.photos/1280/600')"
     >
       <div class="sample-header-section text-center">
         <h1 class="display-3">Life at Techvantage</h1>
@@ -165,6 +163,62 @@
                           lot of energy, which leads to a lot of passion for
                           meeting all of our customers' needs.
                         </p>
+                      </div>
+                      <div class="gallery">
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1485766410122-1b403edb53db?dpr=1&auto=format&fit=crop&w=1500&h=846&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1485793997698-baba81bf21ab?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1485871800663-71856dc09ec4?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1485871882310-4ecdab8a6f94?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1485872304698-0537e003288d?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1485872325464-50f17b82075a?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1470171119584-533105644520?dpr=1&auto=format&fit=crop&w=1500&h=886&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1485881787686-9314a2bc8f9b?dpr=1&auto=format&fit=crop&w=1500&h=969&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
+                        <div class="img-w">
+                          <img
+                            src="https://images.unsplash.com/photo-1485889397316-8393dd065127?dpr=1&auto=format&fit=crop&w=1500&h=843&q=80&cs=tinysrgb&crop="
+                            alt=""
+                          />
+                        </div>
                       </div>
                     </div>
                     <div id="value" class="tab-pane fade">
@@ -516,7 +570,7 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/appear.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -530,6 +584,22 @@
         $("input[type=checkbox]").trigger("click"); //or you can use .click()
 
         $("#menuu").removeClass("menu-active");
+      });
+
+      $(function () {
+        $(".img-w").each(function () {
+          $(this).wrap("<div class='img-c'></div>");
+          let imgSrc = $(this).find("img").attr("src");
+          $(this).css("background-image", "url(" + imgSrc + ")");
+        });
+      });
+
+      $(document).on("click", ".img-c.active", function () {
+        let copy = $(this);
+        copy.removeClass("positioned active").addClass("postactive");
+        setTimeout(function () {
+          copy.remove();
+        }, 500);
       });
     </script>
   </body>
